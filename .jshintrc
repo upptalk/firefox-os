@@ -1,0 +1,28 @@
+{
+  "browser": true,
+  "node": true,
+  "strict": true,
+  "trailing": true,
+  "indent": 2,
+  "sub": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "U": false,
+    "alert": false,
+    "IChat": false,
+    "IMessages": false,
+    "IGroups": false,
+    "ILayout": false,
+    "ISidebar": false,
+    "IEndpoints": false,
+    "IContacts": false,
+    "IUser": false,
+    "IApp": false,
+    "console": false,
+    "localforage": false,
+    "MozActivity": false,
+    "moment": false,
+    "IAccount": false
+  }
+}
