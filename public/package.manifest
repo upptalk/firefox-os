@@ -1,0 +1,10 @@
+{
+  "name": "UppTalk",
+  "package_path" : "http://192.168.1.10:3000/package.zip",
+  "version": "1",
+  "size": "316573",
+  "developer": {
+    "name": "yuilop SL",
+    "url": "http://upptalk.com"
+  }
+}

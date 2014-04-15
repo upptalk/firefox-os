@@ -1,0 +1,14 @@
+#login form {
+  width: 200px;
+  margin: auto;
+  /*margin-top: calc(50% + 45px);*/
+  /*margin-top: -moz-calc(50% + 45px);*/
+}
+
+#login form > * {
+  display: block;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}

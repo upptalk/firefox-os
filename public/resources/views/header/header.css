@@ -1,0 +1,76 @@
+body > header {
+  border-bottom: 4px solid #1BF2B3;
+  background-color: #161F22;
+  height: 42px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* buttons */
+body > header > button {
+  position: absolute;
+  height: 38px;
+  top: 0;
+  background-color: inherit;
+  color: inherit;
+  width: 30px;
+}
+#back, #new-chat{
+  left: 0;
+}
+#menu {
+  right: 0;
+  background-image: url('/resources/images/menu.png');
+}
+#back {
+  background-image: url('/resources/images/back.png');
+}
+#new-chat {
+  background-image: url('/resources/images/new.png');
+}
+/* icon */
+#title-icon {
+  position: absolute;
+  left: 30px;
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+#title-icon img {
+  display: inline;
+  max-width: 38px;
+  max-height: 38px;
+}
+/* title */
+body > header > span {
+  position: absolute;
+  display: block;
+  left: 30px;
+  width: calc(100% - 60px);
+  text-align: center;
+}
+body > header.sub > span {
+  left: 70px;
+  width: calc(100% - 100px);
+  text-align: left;
+}
+#title {
+  height: 42px;
+  line-height: 42px;
+  color: white;
+  font-size: 21px;
+}
+#subtitle {
+  height: 19px;
+  line-height: 19px;
+  display: none;
+  color: lightgrey;
+  font-size: 14px;
+}
+header.sub #subtitle{
+  display: block;
+}
+header.sub #title {
+  height: 19px;
+  line-height: 19px;
+}

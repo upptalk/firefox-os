@@ -1,0 +1,5 @@
+#contacts  {
+  height: calc(100% - 37px);
+  height: -moz-calc(100% - 37px);
+  overflow-y: auto;
+}

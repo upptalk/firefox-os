@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>UppTalk</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/png" href="/resources/images/icons/16.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <!-- include -->
+    <link type="text/css" rel="stylesheet" href="/resources/lib/include.css"/>
+    <script type="application/javascript" src="/resources/lib/include.js"/>
+
+
+    <!-- HTML Imports polyfill -->
+    <!-- <script type="application/javascript" src="lib/HTMLImports/html-imports.js"/> -->
+
+    <!-- Pointer events polyfill -->
+    <!-- <script type="application/javascript" src="bower_components/pointerevents-polyfill/pointerevents.min.js"/> -->
+
+    <!-- localforage -->
+    <script type="application/javascript" src="/resources/lib/localforage.js"/>
+
+    <!-- upptalk.js -->
+    <script type="application/javascript" src="/resources/lib/upptalk.js"/>
+    <!-- moment.js -->
+    <script type="application/javascript" src="/resources/lib/moment.min.js"/>
+
+    <!-- app -->
+    <script type="application/javascript" src="/resources/IEndpoints.js"/>
+    <script type="application/javascript" src="/resources/config.js"/>
+    <script type="application/javascript" src="/resources/script.js"/>
+    <script type="application/javascript" src="/resources/IApp.js"/>
+    <script type="application/javascript" src="/resources/ILayout.js"/>
+    <script type="application/javascript" src="/resources/IContacts.js"/>
+    <script type="application/javascript" src="/resources/IMessages.js"/>
+    <script type="application/javascript" src="/resources/IGroups.js"/>
+    <script type="application/javascript" src="/resources/IUser.js"/>
+
+    <!-- <link rel="import" href="foo.xhtml" /> -->
+
+    <link type="text/css" rel="stylesheet" href="/resources/style.css"/>
+    <link type="text/css" rel="stylesheet" href="/resources/views/header/header.css"/>
+  </head>
+  <body>
+    <header>
+      <span>
+        <span id="title">UppTalk</span>
+        <span id="subtitle"/>
+      </span>
+      <button id="back" hidden="hidden"/>
+      <div id="title-icon"><img/></div>
+      <button id="new-chat"/>
+      <button id="menu"/>
+    </header>
+    <main>
+      <div id="deck">
+        <section hidden="hidden">
+          <x-include src="/resources/views/welcome/welcome.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/login/login.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/register/register.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/home/home.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/contacts/contacts.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/chat/chat.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/settings/settings.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/account/account.xhtml"/>
+        </section>
+        <section hidden="hidden">
+          <x-include src="/resources/views/invite/invite.xhtml"/>
+        </section>
+      </div>
+      <side class="hide" id="sidebar">
+        <x-include src="/resources/views/sidebar/sidebar.xhtml"/>
+      </side>
+    </main>
+    <audio hidden="hidden">
+      <source src="/resources/media/waterdrop.mp3" type="audio/mpeg"/>
+      <source src="/resources/media/waterdrop.oga" type="audio/ogg"/>
+    </audio>
+  </body>
+</html>

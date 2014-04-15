@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#deck, section, x-include {
+  width: 100%;
+  height: 100%;
+}
+
+body > main {
+  height: calc(100% - 42px);
+  height: -moz-calc(100% - 42px);
+  overflow: hidden;
+}
+
+button, input[type="submit"] {
+  background-color: #1BF2B3;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button, input[type="submit"] {
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+form button, form input[type="submit"] {
+  background-image: url('/resources/images/send.png');
+}
+
+form button.loading, form input[type="submit"].loading {
+  background-image: url('/resources/images/loading.png');
+  cursor: progress;
+}
+
+li.contact {
+  cursor: pointer;
+  border-bottom: solid lightgrey 1px;
+  height: 60px;
+}
+
+li.contact .avatar {
+  margin-right: 8px;
+}
+
+li.contact > * {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+li.contact.unread {
+  background-color: rgba(174, 163, 246, 1);
+}
+
+li.contact .name {
+  line-height: 60px;
+  width: calc(100% - 78px);
+  width: -moz-calc(100% - 78px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+form.super {
+  height: 37px;
+}
+form.super > * {
+  height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+form.super input {
+  width: calc(100% - 47px);
+}
+form.super *[type="submit"] {
+  width: 47px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.avatar img {
+  display: inline;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+input[type="text"], input[type="search"], input[type="password"] {
+  border: 1px solid #808080;
+}

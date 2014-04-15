@@ -1,0 +1,44 @@
+{
+  "name": "UppTalk",
+  "description": "UppTalk",
+  "launch_path": "/index.xhtml",
+  "icons": {
+    "128": "/resources/images/icons/128.png",
+    "60": "/resources/images/icons/60.png"
+  },
+  "developer": {
+    "name": "UppTalk",
+    "url": "http://upptalk.com"
+  },
+  "type": "privileged",
+  "default_locale": "en",
+  "origin": "app://upptalk",
+  "permissions": {
+    "contacts": {
+      "access": "readcreate",
+      "description": "Find your contacts."
+    },
+    "audio-capture": {
+      "description": "Send audio notes to your contacts."
+    },
+    "geolocation": {
+      "description": "Share your location to your contacts."
+    },
+    "push": {
+      "description": "Stay connected, even if the application is not open."
+    },
+    "desktop-notification": {
+      "description": "Show visual notifications."
+    }
+  },
+  "messages": [{
+      "push": "/index.xhtml"
+    }, {
+      "push-register": "/index.xhtml"
+  }],
+  "activities": {
+    "share": {
+      "returnValue": false
+    }
+  }
+}

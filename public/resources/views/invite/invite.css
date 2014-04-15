@@ -1,0 +1,11 @@
+#invite a {
+  width: 100%;
+  display: block;
+  height: 40px;
+  background-color: grey;
+  color: white;
+  text-decoration: inherit;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: solid 1px white;
+}
